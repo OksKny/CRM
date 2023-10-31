@@ -190,7 +190,7 @@ iframe {
   display: block;
   width: 20px;
   height: 15px;
-  background-image: url("assets/img/checkbox.svg") ;
+  background-image: url("..img/assets/checkbox.svg") ;
   background-repeat: no-repeat;
   background-size: contain;
   opacity: 0;
@@ -321,7 +321,7 @@ iframe {
 }
 
 .modal__button {
-  background-image: url("assets/img/cross.svg");
+  background-image: url("..img/assets/cross.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-color: transparent;
