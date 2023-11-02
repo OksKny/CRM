@@ -63,6 +63,7 @@ iframe {
   inset: 0;
   background-color: rgba(0, 0, 0, 0.2);
   padding: 50px 30px;
+  
 }
 
 .modal {
@@ -321,7 +322,7 @@ iframe {
 }
 
 .modal__button {
-  background-image: url("..img/assets/cross.svg");
+  background-image: url("assets/img/cross.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-color: transparent;

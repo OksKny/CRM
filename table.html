@@ -11,15 +11,13 @@
 
 </head>
 <body>
-    <div class="overlay">
-        <div class="modal table">
+        <div class="table modal">
           <div class="modal__inner table__inner">
             <h1 class="modal__title table__title">CMS</h1>
             <div class="modal__block-result">
               <p class="modal__result table__result">Итоговая стоимость:<p class="modal__result modal__result-color">$ 900.00</p></p>
             </div>
         </div>
-
 
         <div class="table__window">
           <div class="table__header">
@@ -333,9 +331,83 @@
             </tfoot>
           </table>
         </div>
-            </div>
         </div>
       </div>
+      
+        <div class="overlay">
+          <div class="modal">
+            <div class="modal__header">
+              <h1 class="modal__title modal__title-add">Добавить товар</h1>
+              <h2 class="modal__title modal__title-change">Изменить товар</h2>
+              <p class="modal__id">id: 201910241</p>
+              <button class="modal__button" type="button" uk-close aria-label="Закрыть"></button>
+            </div>
+            
+            <form class="modal__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+              <fieldset class="modal__window">
+                <div class="modal__window-column">
+                  <div class="modal__window-column-one">
+                    <label class="modal__name" for="name">Наименование</label>
+                    <input class="modal__input" type="text" name="name" id="name" required>
+              
+                    <label class="modal__name" for="category">Категория</label>
+                    <input class="modal__input" type="text" name="category" id="category" required>
+              
+                    <label class="modal__name" for="units">Единицы измерения</label>
+                    <input class="modal__input" type="text" name="units" id="units" required>
+                
+                    <label class="modal__name" for="discount">Дисконт</label> 
+                    <div class="modal__discount">
+                      <input class="modal__checkbox" type="checkbox" id="checkbox"  aria-label="discount">
+                      <input class="modal__input modal__input_color-grey" type="text" name="discount" id="discount" required disabled> 
+                    </div>
+                  </div>
+      
+                  
+                  <div class="modal__window-column-two">
+                    <label class="modal__name" for="description">Описание</label>
+                    <textarea class="modal__input modal__input-textarea" name="description" id="description" required></textarea>
+          
+                    <label class="modal__name" for="quantity">Количество</label>
+                    <input class="modal__input" type="text" name="quantity" id="quantity"  required>
+          
+                    <label class="modal__name" for="price">Цена</label>
+                    <input class="modal__input" type="text" name="price" id="price" required>  
+                  </div> 
+                </div>
+      
+                <div class="modal__image">
+                  <div class="modal__image-warning">
+                  <p class="modal__image-warning-text">Изображение не должно превышать размер 1 Мб</p>
+                </div>
+      
+                <label class="modal__name-file" for="file">Добавить изображение
+                <input class="modal__input-file" type="file"></input></label>
+              </div>
+      
+                <div class="modal__product">
+                  <img class="modal__product-img" src="assets/img/product.jpg" alt="">
+                  <img class="modal__product-img-none" src="assets/img/product-none.png" alt="">
+                  <button class="modal__product-img-icon"><img  src="assets/img/product-delete.svg" alt=""></button>
+                </div>
+              </fieldset>
+                
+            <div class="modal__footer">
+              <div class="modal__footer-block">
+                <p class="modal__result">Итоговая стоимость:<p class="modal__result modal__result-color">$ 900.00</p></p>
+              </div>
+              <button class="modal__submit" type="submit">Добавить товар</button>
+              </div>
+      
+            <div class="modal__wrong">
+              <button class="modal__button" type="button" uk-close="" aria-label="Закрыть"></button>
+              <img class="modal__wrong-img" src="assets/img/cross_red.svg" alt="">
+              <p class="modal__wrong-text">Что-то пошло не так</p>
+            </div>
+              
+          </form>
+        </div>
+      </div>  
     
 </body>
 </html>
