@@ -26,9 +26,6 @@
     display: flex;
 }
 
-.table__result {
-    padding: 0;
-}
 
 .table__window {
     background-color: #ffff;

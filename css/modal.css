@@ -276,7 +276,7 @@ iframe {
 }
 
 .modal__result {
-  color: var(--fonts-primary-variant, #6E6893);
+  color:  #6E6893;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.5;
